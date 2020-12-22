@@ -1,0 +1,67 @@
+body {
+	font-size: 1.6em;
+	color: #c9d4d4;
+	background: #858585;
+}
+
+h1,
+h2 {
+	color: yellowgreen;
+	letter-spacing: .02rem; 
+}
+
+h1 {
+	margin: 2rem 0;
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+h2 { font-size: 1.6rem; }
+
+button { 
+	color: yellowgreen; 
+	border-color: yellowgreen; 
+
+	&:hover, 
+	&:active,
+	&:focus {
+		color: yellow;
+		border-color: yellow; 
+	}
+}
+
+hr { border-color: #404040; }
+
+#app {
+	margin: 2rem auto;
+	padding: 2rem;
+	max-width: 80rem;
+	background: #1e1e1e;
+	border-radius: .5rem;
+
+	header.page {
+		border-bottom: .1rem solid #404040;
+
+		ul {
+			display: flex;
+			justify-content: flex-start;
+			margin: 0;
+
+			li {
+				list-style: none;
+				padding: .5rem;
+
+				a { 
+					color: yellowgreen;
+					text-decoration: none; 
+
+					&:hover { color: yellow; }
+				}
+			}
+		}
+	}
+
+	main { padding: 2rem 0; }
+
+	.result { color: aquamarine; }
+}

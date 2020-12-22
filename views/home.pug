@@ -1,0 +1,33 @@
+extends ../dist/layout
+
+block content
+
+	section
+		img(src='/media/bird.jpg', alt='')
+
+	section
+		article
+			header
+				h1 Webpack 5 Boilerplate
+				p It's recommended to use the "webpack work flow" only. 
+				p To get rid of "static work flow" search for "static-work-flow" and comment or remove the responsible lines.
+				hr
+			section
+				h2 webpack work flow
+				p This line is styled by scss from /src/css/.
+				p.webpack-work-flow
+				hr
+			section
+				h2 static work flow
+				p.static-css This line is styled by css from /public/css/.
+				p.static-work-flow
+
+	hr
+
+	section
+		article
+			header
+				h2 api example
+			section
+				button.api get api data (via ajax)
+				div.result

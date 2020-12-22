@@ -1,0 +1,9 @@
+{
+	"host": "127.0.0.1",
+	"port": 3333,
+	"session": {
+		"name": "webpack5boilerplate",
+		"secret": "6fd34530b-jdd-4db-4d4gr0-ad373e6dfg",
+		"maxAge": 86400000
+	}
+}
