@@ -1,4 +1,12 @@
-# Webpack 5 Boilerplate: Node.js, Express, Pug, ES6, SASS, jQuery
+# Webpack 5 Boilerplate
+
+- Webpack 5
+- Node.js
+- Express
+- Pug
+- ES6
+- SASS
+- jQuery
 
 ``` bash
 # install dependencies
