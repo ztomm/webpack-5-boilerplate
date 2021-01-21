@@ -2,6 +2,8 @@
 		"name": "webpack-5-boilerplate",
 		"version": "0.0.0",
 		"description": "Webpack 5 Boilerplate: Node.js, Express, Pug, ES6, SASS, jQuery",
+		"author": "Murat Karaca <dev@muratkaraca.de> (https://www.kmgt.de)",
+		"license": "MIT",
 		"scripts": {
 				"build:prod": "webpack --mode=production --progress --profile",
 				"watch:build": "webpack --watch --mode=development --progress --profile",
