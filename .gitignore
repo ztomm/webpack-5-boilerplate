@@ -17,7 +17,6 @@ tmp
 .npm
 
 #Build
-public
 dist
 package-lock.json
 

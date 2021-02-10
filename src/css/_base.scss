@@ -2,6 +2,7 @@
 $my-color-var: #fff; 
 
 // Imports
-@import './normalize.scss';
-@import './skeleton.scss';
-@import './template.scss';
+@import './normalize';
+@import './fonts';
+@import './skeleton';
+@import './template';

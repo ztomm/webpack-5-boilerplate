@@ -50,30 +50,11 @@ module.exports = {
 			},
 			{
 				test: /\.(png|svg|jpe?g|gif)$/,
-				include: /images/,
-				use: [
-					{
-						loader: 'file-loader',
-						options: {
-							name: '[name].[ext]',
-							outputPath: 'images/',
-							publicPath: 'images/'
-						}
-					}
-				]
+				type: 'asset/resource',
 			},
 			{
 				test: /\.(woff(2)?|ttf|otf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-				include: [/fonts/, /node_modules/],
-				use: [
-					{
-						loader: 'file-loader',
-						options: {
-							name: '[name].[ext]',
-							outputPath: 'fonts/',
-						}
-					}
-				]
+				type: 'asset/resource',
 			},
 			{
 				test: /\.pug$/,

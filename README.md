@@ -10,7 +10,7 @@
 
 ``` bash
 # install dependencies
-npm i
+npm i --legacy-peer-deps
 
 # serve in dev mode, with hot reload at localhost:3333
 npm run dev:windows
