@@ -59,6 +59,10 @@ module.exports = {
 			{
 				test: /\.pug$/,
 				loader: 'pug-loader',
+				// pretty output to keep indentation
+				options: {
+					pretty: true
+				},
 				// this include is fake but necessary for pugs block reference
 				include: path.join(process.cwd(), 'src'),
 			},
