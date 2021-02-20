@@ -59,10 +59,6 @@ module.exports = {
 			{
 				test: /\.pug$/,
 				loader: 'pug-loader',
-				// pretty output to keep indentation
-				options: {
-					pretty: true
-				},
 				// this include is fake but necessary for pugs block reference
 				include: path.join(process.cwd(), 'src'),
 			},
@@ -78,11 +74,13 @@ module.exports = {
 			$: 'jquery',
 			jQuery: 'jquery'
 		}),
-		new HtmlWebpackPugPlugin(),
 		new HtmlWebpackPlugin({
 			template: './views/_base.pug',
 			filename: 'layout.pug',
+			// pretty output to keep indentation
+			minify: false,
 		}),
+		new HtmlWebpackPugPlugin(),
 		new MiniCssExtractPlugin({
 			filename: isProd ? '[name].[contenthash].css' : '[name].css',
 			chunkFilename: isProd ? '[id].[contenthash].css' : '[id].css'
