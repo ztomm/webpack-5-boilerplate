@@ -9,6 +9,12 @@
 - jQuery
 
 ``` bash
+# clone repo
+git clone https://github.com/xkmgt/webpack-5-boilerplate.git
+
+# cd into
+cd webpack-5-boilerplate
+
 # install dependencies
 npm i --legacy-peer-deps
 
