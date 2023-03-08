@@ -5,12 +5,12 @@
 - Express
 - Pug
 - ES6
-- SASS
+- SCSS
 - jQuery
 
 ``` bash
 # clone repo
-git clone https://github.com/xkmgt/webpack-5-boilerplate.git
+git clone https://github.com/ztomm/webpack-5-boilerplate.git
 
 # cd into
 cd webpack-5-boilerplate

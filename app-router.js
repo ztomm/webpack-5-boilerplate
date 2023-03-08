@@ -1,6 +1,7 @@
 const path = require('path');
 const express = require('express');
 const router = express.Router();
+const responsiveImages = require('express-responsive-images');
 
 /**
  * Controllers (route handlers).
@@ -23,6 +24,14 @@ router.post('/api/data-example', apiController.postDataExample);
 /**
  * Static routes.
  */
+// https://www.npmjs.com/package/express-responsive-images
+router.use(responsiveImages({
+	staticDir: '/public',
+	watchedDirectories: ['/images', '/media'],
+	debug: false,
+	// options ...
+}));
+
 // maxAge: 365.25 * 86400000
 router.use('/dist', express.static(path.join(process.cwd(), 'dist'), { maxAge: 30 * 86400000 }));
 router.use('/', express.static(path.join(process.cwd(), 'public'), { maxAge: 30 * 86400000 }));
